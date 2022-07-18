@@ -1,0 +1,13 @@
+max=len(nums)
+        min=0
+        mid=max-min
+        for t in nums:
+            if t==target:
+                return nums.index(t)
+            elif target>=t:
+                min=mid+1
+            else:
+                max=mid-1
+            else:
+               if target not in nums:
+                return -1
